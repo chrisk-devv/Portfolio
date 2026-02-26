@@ -24,9 +24,24 @@
 }
 
 .certBadgeFrame {
+    flex: 0 0 auto;
     overflow: hidden;
     border-radius: 9999px !important;
     background: transparent;
+    aspect-ratio: 1 / 1;
+}
+
+.certBadgeMedia {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.certBadgeFrame :global(img) {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    border-radius: 9999px !important;
+    display: block;
 }
 
 .introDescription {

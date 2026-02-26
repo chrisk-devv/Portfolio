@@ -391,6 +391,7 @@ export default function About() {
                             height={certificate.image.height}
                           >
                             <Media
+                              className={styles.certBadgeMedia}
                               enlarge
                               radius="full"
                               sizes={certificate.image.width.toString()}
