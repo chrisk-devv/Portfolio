@@ -14,7 +14,16 @@ import {
   SpacingToken,
 } from "@once-ui-system/core";
 import { Footer, Header, RouteGuard, Providers } from "@/components";
-import { about, baseURL, dataStyle, effects, fonts, person, style } from "@/resources";
+import {
+  about,
+  avatarImagePath,
+  baseURL,
+  dataStyle,
+  effects,
+  fonts,
+  person,
+  style,
+} from "@/resources";
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -22,7 +31,7 @@ export async function generateMetadata() {
     description: about.description,
     baseURL: baseURL,
     path: about.path,
-    image: person.avatar,
+    image: avatarImagePath,
   });
 }
 

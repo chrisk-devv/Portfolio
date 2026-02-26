@@ -2,6 +2,7 @@ export {
   person,
   social,
   about,
+  avatarImagePath,
 } from "./content";
 
 export {

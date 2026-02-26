@@ -12,7 +12,7 @@ import {
   Schema,
   Row,
 } from "@once-ui-system/core";
-import { baseURL, about, person, social } from "@/resources";
+import { avatarImagePath, baseURL, about, person, social } from "@/resources";
 import TableOfContents from "@/components/about/TableOfContents";
 import ScrollRevealBlur from "@/components/about/ScrollRevealBlur";
 import styles from "@/components/about/about.module.scss";
@@ -23,7 +23,7 @@ export async function generateMetadata() {
     title: about.title,
     description: about.description,
     baseURL: baseURL,
-    image: person.avatar,
+    image: avatarImagePath,
     path: about.path,
   });
 }
@@ -68,7 +68,7 @@ export default function About() {
         author={{
           name: person.name,
           url: `${baseURL}${about.path}`,
-          image: `${baseURL}${person.avatar}`,
+          image: `${baseURL}${avatarImagePath}`,
         }}
       />
       {about.tableOfContent.display && (
