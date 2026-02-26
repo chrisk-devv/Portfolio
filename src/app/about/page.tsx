@@ -241,11 +241,12 @@ export default function About() {
                       >
                         {experience.role}
                       </Text>
-                      <Column as="ul" gap="16">
+                      <Column as="ul" className={styles.workAchievementsList} gap="16">
                         {experience.achievements.map(
                           (achievement: React.ReactNode, index: number) => (
                             <Text
                               as="li"
+                              className={styles.workAchievementItem}
                               variant="body-default-m"
                               key={`${experience.company}-${index}`}
                             >
@@ -255,7 +256,14 @@ export default function About() {
                         )}
                       </Column>
                       {experience.images && experience.images.length > 0 && (
-                        <Row fillWidth paddingTop="m" paddingLeft="40" gap="12" wrap>
+                        <Row
+                          className={styles.workImagesRow}
+                          fillWidth
+                          paddingTop="m"
+                          paddingLeft="40"
+                          gap="12"
+                          wrap
+                        >
                           {experience.images.map((image, index) => (
                             <Row
                               key={index}

@@ -44,6 +44,21 @@
     display: block;
 }
 
+.workAchievementsList {
+    margin: 0;
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+.workAchievementItem {
+    margin: 0;
+    padding-left: 0;
+}
+
+.workImagesRow {
+    padding-left: 0 !important;
+}
+
 .introDescription {
     font-size: 1.3rem !important;
     line-height: 1.7 !important;
