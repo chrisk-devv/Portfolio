@@ -385,13 +385,14 @@ export default function About() {
                       {certificate.image && (
                         <Row fillWidth paddingTop="m">
                           <Row
-                            radius="m"
+                            className={styles.certBadgeFrame}
+                            radius="full"
                             minWidth={certificate.image.width}
                             height={certificate.image.height}
                           >
                             <Media
                               enlarge
-                              radius="m"
+                              radius="full"
                               sizes={certificate.image.width.toString()}
                               alt={certificate.image.alt}
                               src={certificate.image.src}

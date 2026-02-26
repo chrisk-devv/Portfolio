@@ -23,6 +23,12 @@
     transition: color var(--transition-micro-medium);
 }
 
+.certBadgeFrame {
+    overflow: hidden;
+    border-radius: 9999px !important;
+    background: transparent;
+}
+
 .introDescription {
     font-size: 1.3rem !important;
     line-height: 1.7 !important;
