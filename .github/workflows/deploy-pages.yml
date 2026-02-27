@@ -19,8 +19,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       # Replace these with your real GitHub username and repository name.
-      NEXT_PUBLIC_SITE_URL: https://chrisk-devv.github.io/Portfolio
-      NEXT_PUBLIC_BASE_PATH: /Portfolio
+      NEXT_PUBLIC_SITE_URL: https://chrisk-devv.github.io/Profile
+      NEXT_PUBLIC_BASE_PATH: /Profile
     steps:
       - name: Checkout
         uses: actions/checkout@v4
